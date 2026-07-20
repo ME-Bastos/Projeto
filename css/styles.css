@@ -37,39 +37,42 @@ nav {
     border-bottom: 1px solid #CCC;
 }
 
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 .nav-container {
     max-width: 1200px;
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .nav-container > a {
+    float: left;
     display: block;
-    flex-shrink: 0;
 }
 
 #logo {
     width: 50px;
     height: 50px;
-    display: block;
+    margin-top: 25px;
+    float: left;
+    margin-left: 0;
 }
 
 .nav-container ul {
+    float: right;
     height: 100px;
     line-height: 100px;
     margin: 0;
-    display: flex;
 }
 
 .nav-container ul li {
     list-style: none;
+    float: left;
     margin: 0 15px;
 }
 
@@ -613,3 +616,107 @@ footer .wrapper:after {
     margin-top: 40px;
     text-align: center;
 }
+
+/* responsivo */
+@media screen and (max-width: 1024px) { /* tamanho do laptop */
+	#logo {
+		position: absolute;
+		left: 50px;
+	}
+
+	.nav-container ul {
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+
+	.nav-container ul li {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+    /*formulário para achar vagas laptop*/
+    #search-form {
+        padding-top: 25em;
+        padding-bottom: 5em;
+    }
+
+    #search-form form {
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-form form input, #search-form form select {
+        display: block;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        border-width: 0;
+        padding-top: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    #lastjobs-container.wrapper, #status-container.wrapper, #blog-container.wrapper, .wrapper {
+        max-width: 960px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+/* responsivo para tablets */
+@media screen and (max-width: 768px) {
+    /*últimas vagas */
+    .company-box {
+        width: 46%;
+        padding-left: 1em;
+    }
+
+    .company-box .company-info h3 {
+        font-size: 1em;
+    }
+
+    .company-box .company-info p, .locality i, .locality p, .job-type  span {
+        font-size: .8em;
+    }
+
+    .job-type {
+        right: 1em;
+    }
+
+    /* Envie vagas */
+    #sendjobs-inner h2, #sendjobs-inner p {
+        text-shadow: .5px .5px #000;
+    }
+
+    /* estatísticas do superjobs*/
+    .status-box {
+        width: 49.4%;
+        border: none;
+    }
+
+    /* pra colocar a separação só no meio */ 
+    .status-box:nth-child(1), .status-box:nth-child(3) {
+        border-right: 1px solid #DDD;
+    }
+
+    /* oq os candidatos dizem */
+    .testmony-box {
+        width: 49.4%;
+    }
+
+    /* parte dos artigos */
+    .article-box {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 3em;
+    }
+}
+
+/* responsivo mobile */
