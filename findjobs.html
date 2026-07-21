@@ -25,25 +25,39 @@
                     </ul>
                 </div>
             </nav>
-            <div id="main-banner">
+        </header>
+        <main id="lastjobs-container" class="wrapper">
+            <h1>Busque a sua vaga</h1>
+            <div id="job-filter">
                 <div id="search-form">
-                    <h1>A maneira mais fácil de encontrar seu novo emprego</h1>
-                    <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus sonhos.</p>
                     <form>
-                         <input type="text" name="job" placeholder="Digite o cargo">
-                         <select name="region">
+                        <input type="text" name="job" placeholder="Digite o cargo">
+                        <select name="region">
                             <option value="">Todos os estados</option>
-                         </select>
+                        </select>
                          <select name="category">
                             <option value="">Categoria</option>
-                         </select>
-                         <input type="submit" value="Pesquisar">
+                        </select>
+                       <input type="submit" value="Pesquisar">
                     </form>
                 </div>
             </div>
-        </header>
-        <main id="lastjobs-container" class="wrapper">
-            <h1>Últimas vagas enviadas</h1>
+            <div id="type-filter">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked><label>CLT</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>PJ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Home Office</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Freelancer</label>
+                    </li>
+                </ul>
+            </div>
             <ul>
                 <li>
                     <!--google--> 
@@ -123,89 +137,9 @@
                 </li>
             </ul>
             <div class="btnjobs-container">
-                <a href="#" class="btn-jobs">Ver mais vagas</a>
+                <a href="#" class="btn-jobs">Carregar mais vagas</a>
             </div>
         </main>
-        <section id="sendjobs-container">
-            <div id="sendjobs-inner" class="wrapper">
-                <h2>Envie uma vaga que será visitada por milhares de candidatos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra fermentum erat, et facilisis ligula feugiat id. Vestibulum ultrices maximus enim at vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet ullamcorper nisi. In hac habitasse platea dictumst. Nulla tincidunt libero a enim vestibulum, in euismod tortor dictum.</p>
-                <a href="#" class="light-btn">Enviar vaga</a>
-            </div>
-        </section>
-        <section id="status-container" class="wrapper">
-            <h2 class="title-center">Estatísticas do SuperJobs</h2>
-            <p class="p-center">Quisque sit amet aliquet leo. Proin a ante orci. Phasellus eros arcu, aliquet accumsan lacus quis, molestie hendrerit sem. Nam venenatis quam feugiat elit interdum, id iaculis ipsum tempus. </p>
-            <div>
-                <div class="status-box">
-                    <span class="status-qtd">150</span>
-                    <p class="status-text">Vagas abertas</p>
-                </div>
-                                <div class="status-box">
-                    <span class="status-qtd">250</span>
-                    <p class="status-text">Candidatos contratados</p>
-                </div>
-                                <div class="status-box">
-                    <span class="status-qtd">50</span>
-                    <p class="status-text">Empresas participantes</p>
-                </div>
-                                <div class="status-box">
-                    <span class="status-qtd">550</span>
-                    <p class="status-text">Candidatos</p>
-                </div>
-            </div>
-        </section>
-        <section id="testmony-container">
-            <div class="wrapper">
-                <h2>Veja o que os candidatos dizem</h2>
-                <p class="p-center">Donec sit amet nisi sed odio vehicula auctor. Suspendisse mattis diam nibh, vel eleifend nibh scelerisque vel. Nullam fermentum elit et faucibus tristique. Quisque feugiat vulputate magna, a euismod elit lacinia et. Phasellus finibus malesuada lorem sit amet varius. Morbi mattis, mauris sed lobortis vulputate, erat mauris egestas tellus, sit amet tempor libero nulla id nunc. Proin pharetra ultrices tincidunt. Nulla ultricies sapien ac imperdiet rhoncus.</p>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Quisque id faucibus justo. Nullam ut nisl in sapien finibus commodo. Aenean at malesuada eros. Aliquam vel urna orci. Mauris sit amet erat erat. Praesent faucibus libero diam, a accumsan tellus aliquet non. Mauris nunc ante, feugiat id viverra quis, aliquet venenatis turpis.</p>
-                    <img src="img/avatar1.png">
-                    <p class="testmony-name">João</p>
-                </div>
-                 <div class="testmony-box">
-                    <p class="testmony-msg">Quisque id faucibus justo. Nullam ut nisl in sapien finibus commodo. Aenean at malesuada eros. Aliquam vel urna orci. Mauris sit amet erat erat. Praesent faucibus libero diam, a accumsan tellus aliquet non. Mauris nunc ante, feugiat id viverra quis, aliquet venenatis turpis.</p>
-                    <img src="img/avatar2.png">
-                    <p class="testmony-name">Maria</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Quisque id faucibus justo. Nullam ut nisl in sapien finibus commodo. Aenean at malesuada eros. Aliquam vel urna orci. Mauris sit amet erat erat. Praesent faucibus libero diam, a accumsan tellus aliquet non. Mauris nunc ante, feugiat id viverra quis, aliquet venenatis turpis.</p>
-                    <img src="img/avatar3.png">
-                    <p class="testmony-name">Pedro</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Quisque id faucibus justo. Nullam ut nisl in sapien finibus commodo. Aenean at malesuada eros. Aliquam vel urna orci. Mauris sit amet erat erat. Praesent faucibus libero diam, a accumsan tellus aliquet non. Mauris nunc ante, feugiat id viverra quis, aliquet venenatis turpis.</p>
-                    <img src="img/avatar4.png">
-                    <p class="testmony-name">Alexia</p>
-                </div>
-            </div>
-        </section>
-        <section id="blog-container" class="wrapper">
-            <h2 class="title-center">Últimos artigos do nosso blog</h2>
-            <p class="p-center">Donec sit amet nisi sed odio vehicula auctor. Suspendisse mattis diam nibh, vel eleifend nibh scelerisque vel. Nullam fermentum elit et faucibus tristique. Quisque feugiat vulputate magna, a euismod elit lacinia et. Phasellus finibus malesuada lorem sit amet varius. Morbi mattis, mauris sed lobortis vulputate, erat mauris egestas tellus, sit amet tempor libero nulla id nunc. Proin pharetra ultrices tincidunt. Nulla ultricies sapien ac imperdiet rhoncus.</p>
-            <div class="article-box">
-                <img src="img/blog1.jpg">
-                <h4><a href="#">Article title</a></h4>
-                <p class="article-date">05 de fevereriro de 2026 | 10 comentários</p>
-                <p class="article-resume">Quisque id faucibus justo. Nullam ut nisl in sapien finibus commodo. Aenean at malesuada eros. Aliquam vel urna orci. Mauris sit amet erat erat. Praesent faucibus libero diam, a accumsan tellus aliquet non. Mauris nunc ante, feugiat id viverra quis, aliquet venenatis turpis.</p>
-                <a href="#" class="article-btn light-btn">Ler post</a>
-            </div>
-                        <div class="article-box">
-                <img src="img/blog2.jpg">
-                <h4><a href="#">Article title</a></h4>
-                <p class="article-date">10 de novembro de 2025 | 10 comentários</p>
-                <p class="article-resume">Quisque id faucibus justo. Nullam ut nisl in sapien finibus commodo. Aenean at malesuada eros. Aliquam vel urna orci. Mauris sit amet erat erat. Praesent faucibus libero diam, a accumsan tellus aliquet non. Mauris nunc ante, feugiat id viverra quis, aliquet venenatis turpis.</p>
-                <a href="#" class="article-btn light-btn">Ler post</a>
-            </div>
-                        <div class="article-box">
-                <img src="img/blog3.jpg">
-                <h4><a href="#">Article title</a></h4>
-                <p class="article-date">15 de maio de 2025 | 10 comentários</p>
-                <p class="article-resume">Quisque id faucibus justo. Nullam ut nisl in sapien finibus commodo. Aenean at malesuada eros. Aliquam vel urna orci. Mauris sit amet erat erat. Praesent faucibus libero diam, a accumsan tellus aliquet non. Mauris nunc ante, feugiat id viverra quis, aliquet venenatis turpis.</p>
-                <a href="#" class="article-btn light-btn">Ler post</a>
-            </div>
-        </section>
         <footer>
             <div class="wrapper">
                 <div class="footer-box">
