@@ -1033,4 +1033,21 @@ footer .wrapper:after {
     .company-footer {
         max-width: 100%; 
     }
+
+    /* página de enviar vagas */
+    #sendjobs #sendjobs-container {
+        padding: 2em 0;
+    }
+
+    #sendjobs h1 {
+        font-size: 2em;
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .input-box {
+        width: 80%;
+    }
 }
